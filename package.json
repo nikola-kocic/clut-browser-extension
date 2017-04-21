@@ -1,0 +1,8 @@
+{
+  "name": "CLUT",
+  "version": "1.6.0",
+  "description": "Cycle through last used tabs using keyboard shortcut.",
+  "devDependencies": {
+    "@types/chrome": "0.0.46"
+  }
+}

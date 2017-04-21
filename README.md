@@ -9,17 +9,17 @@ It remembers the order in which you switched tabs (made a tab active) and it upd
 Note: Sometimes after updating the extension the keyboard shortcut settings get reset.
 Hence you might want to set the desired key board shortcuts again in the keyboard shortcut settings in the Extensions page.
 
-Default Keys*:
-ALT + X: Quick switch
-ALT + Z: Normal switch
-ALT + Shift + Z: Normal switch (in opposite direction)
+Default Keys*:  
+ALT + X: Quick switch  
+ALT + Z: Normal switch  
+ALT + Shift + Z: Normal switch (in opposite direction)  
 *Keys can be changed in keyboard shortcut settings on the extensions page.
 
 
-=Quick switch=:
+=Quick switch=:  
 Use for rapid switching to last tab (by pressing once) or to the second to last used tab(by pressing rapidly twice) and so on.
 
-=Normal switch=:
+=Normal switch=:  
 Use when you want to look for a tab recently used but when you would want to go in a slower pace (needing to glimpse for a bit to see if it is the page you need)
 
 Most other extensions meant to accomplish the same thing don’t work well since there are some limitations/difficulties in the API.
@@ -35,7 +35,8 @@ Features:
 
 FAQ:
 
-- Why are there two sets of shortcuts one for quick switch and one for a slower switch. Isn’t it possible to simplify like ALT+TAB behavior ?
+Q: Why are there two sets of shortcuts one for quick switch and one for a slower switch. Isn’t it possible to simplify like ALT+TAB behavior ?
+
 A: There are some restrictions in browser API which makes it difficult to implement this feature in the most natural way.
 The intention was to make this extension work as close to Alt+Tab in Windows (or Cmd+Tab for Mac).
 Unfortunately due to these limitations though, this extension relies on time intervals in between your key presses.

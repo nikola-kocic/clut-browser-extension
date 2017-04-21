@@ -19,6 +19,9 @@
   "background":{
     "scripts" : ["background.js"]
   },
+  "permissions": [
+    "contextMenus"
+  ],
   "commands": {
     "alt_switch_fast": {
       "suggested_key": {

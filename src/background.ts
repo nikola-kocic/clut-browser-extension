@@ -83,19 +83,16 @@ chrome.commands.onCommand.addListener(processCommand);
 chrome.browserAction.onClicked.addListener(function(tab) {
     CLUTlog("Click recd");
     processCommand("alt_switch_fast");
-
 });
 
 chrome.runtime.onStartup.addListener(function() {
     CLUTlog("on startup");
     initialize();
-
 });
 
 chrome.runtime.onInstalled.addListener(function() {
     CLUTlog("on startup");
     initialize();
-
 });
 
 const doIntSwitch = function() {
@@ -236,6 +233,16 @@ const initialize = function() {
                 }
             });
             CLUTlog("MRU after init: " + mru);
+        });
+
+        const contextMenuId: any = chrome.contextMenus.create({
+            contexts: ["tab", "all"],
+            title: "Focus last used tab",
+        });
+        chrome.contextMenus.onClicked.addListener(function(info) {
+            if (contextMenuId === info.menuItemId) {
+                processCommand("alt_switch_fast");
+            }
         });
     }
 };

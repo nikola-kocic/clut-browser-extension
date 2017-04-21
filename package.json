@@ -1,7 +1,11 @@
 {
-  "name": "CLUT",
+  "name": "clut",
   "version": "1.6.0",
   "description": "Cycle through last used tabs using keyboard shortcut.",
+  "scripts": {
+    "build": "tsc",
+    "pack": "mkdir -p build && mkdir -p output && rsync -a --delete --exclude='*.ts' src/ output/ && tsc && cd ./output && zip -0 -r -FS ../build/clut-browser-extension-$(date +'%Y%m%d-%H%M%S').zip *"
+  },
   "devDependencies": {
     "@types/chrome": "0.0.46"
   }

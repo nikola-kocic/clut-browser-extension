@@ -5,11 +5,16 @@
   "description": "Cycle through last used tabs using keyboard shortcut.",
   "version": "1.6",
   "short_name": "CLUT",
-
+  "applications": {
+    "gecko": {
+      "id": "{15678332-f6bc-45bc-96b6-c2787416c9c2}",
+      "strict_min_version": "42.0"
+    }
+  },
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "background":{
     "scripts" : ["background.js"]
@@ -35,6 +40,6 @@
     }
   },
   "browser_action": {
-    "default_icon": "icon16.png"
+    "default_icon": "icons/icon16.png"
   }
 }

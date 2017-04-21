@@ -6,14 +6,10 @@ Browser Extension to switch between last used tabs easily using shortcut.
 This extension tries to mimic the ALT+TAB behavior from Windows (or Command+TAB in Mac) to allow to switch between open tabs in a Most Recently Used fashion.
 It remembers the order in which you switched tabs (made a tab active) and it updates its records so that you can switch to the recently used ones quickly.
 
-Note: Sometimes after updating the extension the keyboard shortcut settings get reset.
-Hence you might want to set the desired key board shortcuts again in the keyboard shortcut settings in the Extensions page.
-
-Default Keys*:  
+Default Keys:  
 ALT + X: Quick switch  
 ALT + Z: Normal switch  
 ALT + Shift + Z: Normal switch (in opposite direction)  
-*Keys can be changed in keyboard shortcut settings on the extensions page.
 
 
 =Quick switch=:  

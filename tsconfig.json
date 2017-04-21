@@ -7,9 +7,13 @@
         "noImplicitThis": true,
         "noImplicitReturns": true,
         "strictNullChecks": true,
-        "sourceMap": false
+        "sourceMap": false,
+        "rootDir": "src",
+        "outDir": "output"
     },
     "files": [
-        "background.ts"
-    ]
+        "src/background.ts"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false
 }
